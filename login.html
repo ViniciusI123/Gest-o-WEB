@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MANAGEMENT WEB</title>
+    
+</head>
+<body>
+    <div class="main-login">
+    <div class="left-login">
+    </div>
+    <div class="right-login">
+        <h1>Gestão WEB</h1>
+        <div class="card-login">
+            <h1>LOGIN</h1>
+            <div class="textfield">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" placeholder="Usuário" id="usuario">  
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha" id="senha">
+            </div>
+            <button class="btn-logar" onClick={logar()}; return false>Entrar</button>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function logar() {
+        var usuario = document.getElementById('usuario').value;
+        var senha = document.getElementById('senha').value;
+
+        if (usuario == 'admin' && senha == 'admin') {
+            location.href = "home.html";
+        } else {
+            alert('Erro ao acessar, verifique senha e usuário')
+        }
+    }
+        
+</script>
+</body> 
+</html>
